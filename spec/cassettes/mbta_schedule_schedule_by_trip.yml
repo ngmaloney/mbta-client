@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://realtime.mbta.com/developer/api/v2/schedulebytrip?api_key=<API_KEY>&format=json&trip=CR-Needham-CR-Saturday-Needham-Dec14-1611
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sat, 07 Mar 2015 22:30:51 GMT
+      Content-Length:
+      - '1712'
+    body:
+      encoding: UTF-8
+      string: '{"route_id":"CR-Needham","route_name":"Needham Line","trip_id":"CR-Needham-CR-Saturday-Needham-Dec14-1611","trip_name":"1611
+        (5:10 pm from South Station)","direction_id":"0","direction_name":"Outbound","stop":[{"stop_sequence":"1","stop_id":"South
+        Station","stop_name":"South Station","sch_arr_dt":"1425766200","sch_dep_dt":"1425766200"},{"stop_sequence":"2","stop_id":"Back
+        Bay","stop_name":"Back Bay","sch_arr_dt":"1425766500","sch_dep_dt":"1425766500"},{"stop_sequence":"3","stop_id":"Ruggles","stop_name":"Ruggles","sch_arr_dt":"1425766680","sch_dep_dt":"1425766680"},{"stop_sequence":"4","stop_id":"Forest
+        Hills","stop_name":"Forest Hills","sch_arr_dt":"1425767040","sch_dep_dt":"1425767040"},{"stop_sequence":"5","stop_id":"Roslindale
+        Village","stop_name":"Roslindale Village","sch_arr_dt":"1425767280","sch_dep_dt":"1425767280"},{"stop_sequence":"6","stop_id":"Bellevue","stop_name":"Bellevue","sch_arr_dt":"1425767400","sch_dep_dt":"1425767400"},{"stop_sequence":"7","stop_id":"Highland","stop_name":"Highland","sch_arr_dt":"1425767580","sch_dep_dt":"1425767580"},{"stop_sequence":"8","stop_id":"West
+        Roxbury","stop_name":"West Roxbury","sch_arr_dt":"1425767700","sch_dep_dt":"1425767700"},{"stop_sequence":"9","stop_id":"Hersey","stop_name":"Hersey","sch_arr_dt":"1425767940","sch_dep_dt":"1425767940"},{"stop_sequence":"10","stop_id":"Needham
+        Junction","stop_name":"Needham Junction","sch_arr_dt":"1425768120","sch_dep_dt":"1425768120"},{"stop_sequence":"11","stop_id":"Needham
+        Center","stop_name":"Needham Center","sch_arr_dt":"1425768360","sch_dep_dt":"1425768360"},{"stop_sequence":"12","stop_id":"Needham
+        Heights","stop_name":"Needham Heights","sch_arr_dt":"1425768600","sch_dep_dt":"1425768600"}]}'
+    http_version: 
+  recorded_at: Sat, 07 Mar 2015 22:30:52 GMT
+recorded_with: VCR 2.9.3

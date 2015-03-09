@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://realtime.mbta.com/developer/api/v2/alertheaders?api_key=<API_KEY>&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 08 Mar 2015 23:48:01 GMT
+      Content-Length:
+      - '4833'
+    body:
+      encoding: UTF-8
+      string: '{"alert_headers":[{"alert_id":26578,"header_text":"The Church St @
+        Lexington St (layover) bus stop is temporarily closed due to construction."},{"alert_id":30370,"header_text":"7am-3pm:
+        Route 131 (inbound) detoured due to construction & bypasses Porter St @Garfield
+        Rd. Connect at Porter St @Orient Ave & Porter St @Norman Rd."},{"alert_id":45052,"header_text":"Route
+        554 (outbound) detoured beginning Thursday, September 25, 2014, due to construction
+        on the Beaver Street Culvert."},{"alert_id":64251,"header_text":"Routes 5,
+        7, 9 and 10 detoured beginning at 10:00 PM on Saturday, February 14th due
+        to the South Boston Emergency Transportation Reconfiguration."},{"alert_id":64253,"header_text":"Route
+        11 outbound detoured due to the South Boston Emergency Transportation Reconfiguration"},{"alert_id":66442,"header_text":"Route
+        238 detoured due to snow clearing. Bypassing: Trafford St @ Plain, Taber,
+        and Brooks Ave & Liberty St @ Quincy, Brook, Penn, and Centre."},{"alert_id":66848,"header_text":"The
+        Framingham/Worcester Line will continue to operate a modified weekday schedule,
+        Mon, March 9, through Fri, March 13. Schedules available at www.mbta.com/winter."},{"alert_id":66849,"header_text":"Kingston/Plymouth
+        Line Schedule changes, including restored trips, begin Monday, March 2. See
+        mbta.com/winter for full schedule information."},{"alert_id":66850,"header_text":"The
+        Needham Line will continue to operate a modified weekday schedule, Monday,
+        March 9, through Friday, March 13. Schedules are available at www.mbta.com/winter."},{"alert_id":66855,"header_text":"The
+        Newburyport/Rockport Line will continue to operate a modified weekday schedule,
+        Monday, March 9, through Friday, March 13. Schedules are available at www.mbta.com/winter."},{"alert_id":66856,"header_text":"The
+        Lowell Line will continue to operate a modified weekday schedule, Monday,
+        March 9, through Friday, March 13. Schedules are available at www.mbta.com/winter."},{"alert_id":66858,"header_text":"The
+        Greenbush Line will continue to operate a modified weekday schedule, Monday,
+        March 9, through Friday, March 13. Schedules are available at www.mbta.com/winter."},{"alert_id":67562,"header_text":"Buses
+        replacing Red Line service between Alewife and Harvard Square Stations on
+        March 28 - 29  from start to end of service."},{"alert_id":67567,"header_text":"Service
+        change on Providence/Stoughton Line. Trains 817 (5:00 pm from South Station)
+        821 (6:10 pm from South Station) will stop at Canton Junction."},{"alert_id":67853,"header_text":"Fitchburg/South
+        Acton Line Schedule changes, including restored trips, begin Monday, March
+        9. See mbta.com/winter for full schedule information."},{"alert_id":67854,"header_text":"Fairmount
+        Line Schedule changes, including restored trips, begin Monday, March 9. See
+        mbta.com/winter for full schedule information."},{"alert_id":67855,"header_text":"Franklin
+        Line Schedule changes, including restored trips, begin Monday, March 9. See
+        mbta.com/winter for full schedule information."},{"alert_id":67856,"header_text":"Haverhill
+        Line Schedule changes, including restored trips, begin Monday, March 9. See
+        mbta.com/winter for full schedule information."},{"alert_id":67857,"header_text":"Middleborough/Lakeville
+        Line Schedule changes, including restored trips, begin Monday, March 9. See
+        mbta.com/winter for full schedule information."},{"alert_id":67858,"header_text":"Providence
+        Line Schedule changes, begin Monday, March 9. See mbta.com/winter for full
+        schedule information."},{"alert_id":68077,"header_text":"Ashland Parking:
+        Passengers parking at Ashland may enter space number 7669 in PayByPhone to
+        pay for spaces with illegible numbers."},{"alert_id":68159,"header_text":"Rte
+        64 Detour in Effect: Omitting Hobart St., Faulkland St., & Faneuil St. between
+        Brooks St. & Faulkland St. Connect at Brooks Street."},{"alert_id":68183,"header_text":"Route
+        47 inbound detoured. Omitting all Pearl Street Stops. Connection: Putnam Ave
+        @ Magazine St."},{"alert_id":68193,"header_text":"Route 112 experiencing minor
+        delays due to traffic"},{"alert_id":68194,"header_text":"Route 57 experiencing
+        minor delays due to tie replacement"},{"alert_id":68195,"header_text":"Route
+        108 experiencing minor delays due to traffic"},{"alert_id":68196,"header_text":"Route
+        39 experiencing minor delays due to disabled bus"},{"alert_id":68197,"header_text":"Route
+        73 experiencing minor delays due to traffic"},{"alert_id":68201,"header_text":"Route
+        104 experiencing minor delays due to traffic"},{"alert_id":68202,"header_text":"Route
+        43 experiencing minor delays due to traffic"},{"alert_id":68203,"header_text":"Silver
+        Line - SL1 experiencing minor delays due to traffic"},{"alert_id":68204,"header_text":"Route
+        225 outbound detoured due to fire. Connections can be made at Washington St
+        @ Front St or Washington St @ Federal St"}]}'
+    http_version: 
+  recorded_at: Sun, 08 Mar 2015 23:48:02 GMT
+recorded_with: VCR 2.9.3

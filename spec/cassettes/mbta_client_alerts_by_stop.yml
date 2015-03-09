@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://realtime.mbta.com/developer/api/v2/alertsbystop?api_key=<API_KEY>&format=json&stop=1094
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 08 Mar 2015 22:50:19 GMT
+      Content-Length:
+      - '2615'
+    body:
+      encoding: UTF-8
+      string: '{"alerts":[{"alert_id":68159,"effect_name":"Snow Route","effect":"DETOUR","cause_name":"snow","cause":"WEATHER","header_text":"Rte
+        64 Detour in Effect: Omitting Hobart St., Faulkland St., & Faneuil St. between
+        Brooks St. & Faulkland St. Connect at Brooks Street.","short_header_text":"Rte
+        64 Detour in Effect: Omitting Hobart St., Faulkland St., & Faneuil St. between
+        Brooks St. & Faulkland St. Connect at Brooks Street.","description_text":"Bypassed
+        stops:\r\nHobart St @ Brooks St (outbound)\r\nHobart St @ Falkland St (outbound)\r\nFaneuil
+        St @ Donnybrook Rd (outbound)\r\nFaneuil St opp Garfield School (outbound)\r\nFaneuil
+        St @ Brooks St (outbound)\r\nFaneuil St @ Fairbanks St (inbound)\r\nFaneuil
+        St @ Oakland St (inbound)\r\nFaneuil St opp Bothwell Rd (inbound)\r\nFaneuil
+        St @ S Hobart St (inbound)\r\nHobart St @ Falkland St (inbound)\r\nHobart
+        St @ Brooks St (inbound)","severity":"Moderate","created_dt":"1425810591","last_modified_dt":"1425836524","service_effect_text":"Route
+        64 on snow route","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425810589","effect_end":"1425868183"}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1094","stop_name":"Faneuil
+        St @ Fairbanks St"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1095","stop_name":"Faneuil
+        St @ Oakland St"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1096","stop_name":"Faneuil
+        St opp Bothwell Rd"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1097","stop_name":"Faneuil
+        St @ S Hobart St"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1098","stop_name":"Hobart
+        St @ Falkland St"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1100","stop_name":"Hobart
+        St @ Brooks St"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1206","stop_name":"Hobart
+        St @ Brooks St"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1208","stop_name":"Hobart
+        St @ Falkland St"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"12081","stop_name":"Faneuil
+        St @ Donnybrook Rd"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1210","stop_name":"Faneuil
+        St opp Garfield School"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1211","stop_name":"Faneuil
+        St @ Brooks St"}],"elevators":[]}}],"stop_id":"1094","stop_name":"Faneuil
+        St @ Fairbanks St"}'
+    http_version: 
+  recorded_at: Sun, 08 Mar 2015 22:50:19 GMT
+recorded_with: VCR 2.9.3

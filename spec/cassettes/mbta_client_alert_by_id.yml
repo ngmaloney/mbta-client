@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://realtime.mbta.com/developer/api/v2/alertbyid?api_key=<API_KEY>&format=json&id=67858
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 08 Mar 2015 22:54:02 GMT
+      Content-Length:
+      - '1026'
+    body:
+      encoding: UTF-8
+      string: '{"alert_id":67858,"effect_name":"Schedule Change","effect":"MODIFIED_SERVICE","cause":"UNKNOWN_CAUSE","header_text":"Providence
+        Line Schedule changes, begin Monday, March 9. See mbta.com/winter for full
+        schedule information.","short_header_text":"Providence Line Schedule changes,
+        begin Monday, March 9. See mbta.com/winter for full schedule information.","url":"http://www.mbta.com/winter/severe_weather/","description_text":"Departing
+        South Station:\r\nTrain 817 (5:00 PM to Wickford Junction) Canton Junction
+        stop added \r\nTrain 821 (6:10 PM to Providence) Canton Junction stop added","severity":"Minor","created_dt":"1425611762","last_modified_dt":"1425611788","service_effect_text":"Providence/Stoughton
+        Line schedule change","timeframe_text":"starting Monday","alert_lifecycle":"Upcoming","effect_periods":[{"effect_start":"1425889800","effect_end":""}],"affected_services":{"services":[{"route_type":"2","mode_name":"Commuter
+        Rail","route_id":"CR-Providence","route_name":"Providence/Stoughton Line"}],"elevators":[]}}'
+    http_version: 
+  recorded_at: Sun, 08 Mar 2015 22:54:02 GMT
+recorded_with: VCR 2.9.3

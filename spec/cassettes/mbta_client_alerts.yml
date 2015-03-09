@@ -1,0 +1,333 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://realtime.mbta.com/developer/api/v2/alerts?api_key=<API_KEY>&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 08 Mar 2015 22:19:32 GMT
+      Content-Length:
+      - '36753'
+    body:
+      encoding: UTF-8
+      string: '{"alerts":[{"alert_id":26578,"effect_name":"Stop Move","effect":"STOP_MOVED","cause_name":"construction","cause":"CONSTRUCTION","header_text":"The
+        Church St @ Lexington St (layover) bus stop is temporarily closed due to construction.","short_header_text":"The
+        Church St @ Lexington St (layover) bus stop is temporarily closed due to construction.","description_text":"Beginning
+        Monday, April 14, 2014, the Church Street @ Lexington Street stop is temporarily
+        closed due to construction. Customers should please travel west, turn right
+        at Lexington Street, and travel north to the nearest accessible location on
+        Lexington Street @ Church Street.","severity":"Severe","created_dt":"1397178137","last_modified_dt":"1410488784","service_effect_text":"Church
+        St @ Lexington St moved","timeframe_text":"ongoing","alert_lifecycle":"Ongoing","effect_periods":[{"effect_start":"1397464200","effect_end":""}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"73","route_name":"73","stop_id":"2134","stop_name":"Church
+        St @ Lexington St"}],"elevators":[]}},{"alert_id":30370,"effect_name":"Detour","effect":"DETOUR","cause_name":"construction","cause":"CONSTRUCTION","header_text":"7am-3pm:
+        Route 131 (inbound) detoured due to construction & bypasses Porter St @Garfield
+        Rd. Connect at Porter St @Orient Ave & Porter St @Norman Rd.","short_header_text":"7am-3pm:
+        Rt 131  detoured due to construction & bypasses Porter St @Garfield Rd. Connect
+        at Porter St @Orient Ave & Porter St @Norman Rd.","description_text":"Affected
+        direction: Inbound\n\nAffected stops:\nPorter St @ Garfield Rd","severity":"Severe","created_dt":"1400844435","last_modified_dt":"1406778479","service_effect_text":"Route
+        131 detour","timeframe_text":"ongoing","alert_lifecycle":"Upcoming-Ongoing","recurrence_text":"Monday-Tuesday","effect_periods":[{"effect_start":"1425898800","effect_end":"1425934800"},{"effect_start":"1425898800","effect_end":"1425934800"},{"effect_start":"1425985200","effect_end":"1426021200"},{"effect_start":"1425985200","effect_end":"1426021200"},{"effect_start":"1426503600","effect_end":"1426539600"},{"effect_start":"1426503600","effect_end":"1426539600"},{"effect_start":"1426590000","effect_end":"1426626000"},{"effect_start":"1426590000","effect_end":"1426626000"},{"effect_start":"1427108400","effect_end":"1427144400"},{"effect_start":"1427108400","effect_end":"1427144400"}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"131","route_name":"131","direction_id":"1","direction_name":"Inbound","stop_id":"9079","stop_name":"Porter
+        St @ Garfield Rd"}],"elevators":[]}},{"alert_id":45052,"effect_name":"Detour","effect":"DETOUR","cause_name":"construction","cause":"CONSTRUCTION","header_text":"Route
+        554 (outbound) detoured beginning Thursday, September 25, 2014, due to construction
+        on the Beaver Street Culvert.","short_header_text":"Route 554 (outbound) detoured
+        beginning Thursday, September 25, 2014, due to construction on the Beaver
+        Street Culvert.","description_text":"Due to construction on the Beaver Street
+        Culvert (between Waverly Oaks Road and Warren Street), there will be no outbound
+        service on Beaver Street, Warren Street, Belmont Street, or Lexington Street
+        between Waverly Oaks Road and Waverly Square. Inbound service will run normal
+        routing.\r\n\r\nOutbound connections for the Route 554 that travels straight
+        on Beaver Street can be made at Beaver Street and Waverly Oaks Road or at
+        Waverly Square.\r\n\r\nConnections for the Route 554 (t) OUTBOUND that travels
+        Forest Street to Trapelo Road can be made on Trapelo Road opposite Briarwood
+        Road or at Waverly Square.","severity":"Severe","created_dt":"1411604938","last_modified_dt":"1412245010","service_effect_text":"Route
+        554 detour","timeframe_text":"ongoing","alert_lifecycle":"Ongoing","effect_periods":[{"effect_start":"1411633800","effect_end":""}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"554","route_name":"554","direction_id":"0","direction_name":"Outbound"}],"elevators":[]}},{"alert_id":64251,"effect_name":"Detour","effect":"DETOUR","cause":"UNKNOWN_CAUSE","header_text":"Routes
+        5, 7, 9 and 10 detoured beginning at 10:00 PM on Saturday, February 14th due
+        to the South Boston Emergency Transportation Reconfiguration.","short_header_text":"Routes
+        5, 7, 9 and 10 detoured beginning at 10pm on Saturday, February 14th due to
+        the South Boston Emergency Transportation Reconfiguration","description_text":"No
+        service on East 4th Street, connections can be made on East Broadway.\r\nStops
+        Omitted:\r\nEast 4th at O St \r\nEast 4th at N St \r\nEast 4th at M St\r\n\r\nConnections
+        can be made at:\r\nEast Broadway at O St \r\nEast Broadway at N St \r\nEast
+        Broadway at M St","severity":"Severe","created_dt":"1423970310","last_modified_dt":"1423970310","service_effect_text":"Bus
+        detour","timeframe_text":"ongoing","alert_lifecycle":"Ongoing","effect_periods":[{"effect_start":"1423969200","effect_end":""}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"05","route_name":"5"},{"route_type":"3","mode_name":"Bus","route_id":"07","route_name":"7"},{"route_type":"3","mode_name":"Bus","route_id":"09","route_name":"9"},{"route_type":"3","mode_name":"Bus","route_id":"10","route_name":"10"}],"elevators":[]}},{"alert_id":64253,"effect_name":"Detour","effect":"DETOUR","cause":"UNKNOWN_CAUSE","header_text":"Route
+        11 outbound detoured due to the South Boston Emergency Transportation Reconfiguration","short_header_text":"Route
+        11 outbound detoured due to the South Boston Emergency Transportation Reconfiguration","description_text":"Affected
+        direction: Outbound\r\nConnections can be made at Dorchester St @ E 8th St\r\n\r\nStops
+        bypassed:\r\nE 8th St @ Mercer St (outbound) \r\nE 8th St @ Old Harbor St
+        (outbound) \r\nE 8th St @ Covington St (outbound) \r\nE 8th St @ G St (outbound)
+        \r\nE 8th St @ H St (outbound) \r\nE 8th St @ I St (outbound) \r\nE 8th St
+        @ K St (outbound) \r\nE 8th St @ L St (outbound) \r\nE 8th St @ M St (outbound)
+        \r\nE 8th St @ N St (outbound)","severity":"Severe","created_dt":"1423970817","last_modified_dt":"1424294500","service_effect_text":"Route
+        11 detour","timeframe_text":"ongoing","alert_lifecycle":"Ongoing","effect_periods":[{"effect_start":"1424206612","effect_end":""}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"11","route_name":"11","direction_id":"0","direction_name":"Outbound"}],"elevators":[]}},{"alert_id":66442,"effect_name":"Detour","effect":"DETOUR","cause":"UNKNOWN_CAUSE","header_text":"Route
+        238 detoured due to snow clearing. Bypassing: Trafford St @ Plain, Taber,
+        and Brooks Ave & Liberty St @ Quincy, Brook, Penn, and Centre.","short_header_text":"Route
+        238 detoured. Bypassing: Trafford St @ Plain, Taber, and Brooks Ave & Liberty
+        St @ Quincy, Brook, Penn, and Centre","description_text":"Inbound stops bypassed:\r\nCentre
+        St @ Liberty St\r\nTrafford St @ Plain St\r\nTrafford St @ Taber St\r\nTrafford
+        St @ Brooks Ave\r\nLiberty St opp Brook Rd\r\nLiberty St @ Penn St\r\n\r\nOutbound
+        stops bypassed:\r\nLiberty St @ Quincy St\r\nLiberty St @ Brook Rd\r\nTrafford
+        St @ Brooks Ave\r\nTrafford St @ Taber St opp 86 Trafford St\r\nCentre St
+        @ Liberty St (southbound only) Centre St @ Crown Colony Dr","severity":"Severe","created_dt":"1424984250","last_modified_dt":"1425006218","service_effect_text":"Route
+        238 detour","timeframe_text":"ongoing","alert_lifecycle":"Ongoing","effect_periods":[{"effect_start":"1424984236","effect_end":""}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"238","route_name":"238","stop_id":"41032","stop_name":"Centre
+        St @ Liberty St"}],"elevators":[]}},{"alert_id":66848,"effect_name":"Schedule
+        Change","effect":"MODIFIED_SERVICE","cause":"UNKNOWN_CAUSE","header_text":"The
+        Framingham/Worcester Line will continue to operate a modified weekday schedule,
+        Mon, March 9, through Fri, March 13. Schedules available at www.mbta.com/winter.","short_header_text":"The
+        Famnghm/Worc Ln will continue to operate a modified weekday schedule, Mon,
+        Mar 9, through Fri, Mar 13. Schedules available at www.mbta.c","url":"http://www.mbta.com/winter/severe_weather/#cr","severity":"Minor","created_dt":"1425167031","last_modified_dt":"1425726655","service_effect_text":"Framingham/Worcester
+        Line schedule change","timeframe_text":"starting Monday","alert_lifecycle":"Upcoming","effect_periods":[{"effect_start":"1425889800","effect_end":""}],"affected_services":{"services":[{"route_type":"2","mode_name":"Commuter
+        Rail","route_id":"CR-Worcester","route_name":"Framingham/Worcester Line"}],"elevators":[]}},{"alert_id":66849,"effect_name":"Schedule
+        Change","effect":"MODIFIED_SERVICE","cause":"UNKNOWN_CAUSE","header_text":"Kingston/Plymouth
+        Line Schedule changes, including restored trips, begin Monday, March 2. See
+        mbta.com/winter for full schedule information.","short_header_text":"Kingston/Plymouth
+        Line Schedule changes, including restored trips, begin Monday, March 2. See
+        mbta.com/winter for full schedule information.","url":"http://www.mbta.com/winter/severe_weather/","description_text":"Four
+        trips will be restored to the Kingston/Plymouth Line schedule beginning March
+        2: Trains 064 (2:28 PM) and 066 (7:45 PM) departing Plymouth and trains 065
+        (12:25 PM) and 067 (6:15 PM) departing South Station.","severity":"Minor","created_dt":"1425167135","last_modified_dt":"1425167980","service_effect_text":"Kingston/Plymouth
+        Line schedule change","timeframe_text":"starting Monday","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425288600","effect_end":""}],"affected_services":{"services":[{"route_type":"2","mode_name":"Commuter
+        Rail","route_id":"CR-Kingston","route_name":"Kingston/Plymouth Line"}],"elevators":[]}},{"alert_id":66850,"effect_name":"Schedule
+        Change","effect":"MODIFIED_SERVICE","cause":"UNKNOWN_CAUSE","header_text":"The
+        Needham Line will continue to operate a modified weekday schedule, Monday,
+        March 9, through Friday, March 13. Schedules are available at www.mbta.com/winter.","short_header_text":"The
+        Needham Ln will continue to operate a modified weekday schedule, Mon, Mar
+        9, through Fri, Mar 13. Schedules are available at www.mbta.co","url":"http://www.mbta.com/winter/severe_weather/","severity":"Minor","created_dt":"1425167202","last_modified_dt":"1425726864","service_effect_text":"Needham
+        Line schedule change","timeframe_text":"starting Monday","alert_lifecycle":"Upcoming","effect_periods":[{"effect_start":"1425889800","effect_end":""}],"affected_services":{"services":[{"route_type":"2","mode_name":"Commuter
+        Rail","route_id":"CR-Needham","route_name":"Needham Line"}],"elevators":[]}},{"alert_id":66855,"effect_name":"Schedule
+        Change","effect":"MODIFIED_SERVICE","cause":"UNKNOWN_CAUSE","header_text":"The
+        Newburyport/Rockport Line will continue to operate a modified weekday schedule,
+        Monday, March 9, through Friday, March 13. Schedules are available at www.mbta.com/winter.","short_header_text":"The
+        Newbury/Rock Ln will continue to operate a modified weekday schedule, Mon,
+        Mar 9, through Fri, Mar 13. Schedules are available at www.mb","url":"http://www.mbta.com/winter/severe_weather/","severity":"Minor","created_dt":"1425167551","last_modified_dt":"1425727005","service_effect_text":"Newburyport/Rockport
+        Line schedule change","timeframe_text":"starting Monday","alert_lifecycle":"Upcoming","effect_periods":[{"effect_start":"1425889800","effect_end":""}],"affected_services":{"services":[{"route_type":"2","mode_name":"Commuter
+        Rail","route_id":"CR-Newburyport","route_name":"Newburyport/Rockport Line"}],"elevators":[]}},{"alert_id":66856,"effect_name":"Schedule
+        Change","effect":"MODIFIED_SERVICE","cause":"UNKNOWN_CAUSE","header_text":"The
+        Lowell Line will continue to operate a modified weekday schedule, Monday,
+        March 9, through Friday, March 13. Schedules are available at www.mbta.com/winter.","short_header_text":"The
+        Lowell Ln will continue to operate a modified weekday schedule, Mon, Mar 9,
+        through Fri, Mar 13. Schedules are available at www.mbta.com","url":"http://www.mbta.com/winter/severe_weather/","severity":"Minor","created_dt":"1425167602","last_modified_dt":"1425726770","service_effect_text":"Lowell
+        Line schedule change","timeframe_text":"starting Monday","alert_lifecycle":"Upcoming","effect_periods":[{"effect_start":"1425889800","effect_end":""}],"affected_services":{"services":[{"route_type":"2","mode_name":"Commuter
+        Rail","route_id":"CR-Lowell","route_name":"Lowell Line"}],"elevators":[]}},{"alert_id":66858,"effect_name":"Schedule
+        Change","effect":"MODIFIED_SERVICE","cause":"UNKNOWN_CAUSE","header_text":"The
+        Greenbush Line will continue to operate a modified weekday schedule, Monday,
+        March 9, through Friday, March 13. Schedules are available at www.mbta.com/winter.","short_header_text":"The
+        Greenbush Ln will continue to operate a modified weekday schedule, Mon, Mar
+        9, through Fri, Mar 13. Schedules are available at www.mbta.","url":"http://www.mbta.com/winter/severe_weather/","severity":"Minor","created_dt":"1425167718","last_modified_dt":"1425727113","service_effect_text":"Greenbush
+        Line schedule change","timeframe_text":"starting Monday","alert_lifecycle":"Upcoming","effect_periods":[{"effect_start":"1425889800","effect_end":""}],"affected_services":{"services":[{"route_type":"2","mode_name":"Commuter
+        Rail","route_id":"CR-Greenbush","route_name":"Greenbush Line"}],"elevators":[]}},{"alert_id":67562,"effect_name":"Shuttle","effect":"DETOUR","cause":"UNKNOWN_CAUSE","header_text":"Buses
+        replacing Red Line service between Alewife and Harvard Square Stations on
+        March 28 - 29  from start to end of service.","short_header_text":"Buses replacing
+        Red Line service between Alewife and Harvard Square Stations on March 28 -
+        29  from start to end of service.","description_text":"Due to the Floating
+        Slab Project, buses will replace Red Line trains between Alewife and Harvard
+        Square Stations in both directions from start to end of service beginning
+        Saturday, March 28, 2015, through Sunday, March 29, 2015. Regular Red Line
+        train service will resume at the start of service on Monday, March 30. All
+        shuttle bus stops are accessible for persons with disabilities. \r\n\r\nShuttling
+        the following stops:\r\nAlewife\r\nDavis\r\nPorter\r\nHarvard","severity":"Severe","created_dt":"1425504966","last_modified_dt":"1425504966","service_effect_text":"Red
+        Line shuttle","timeframe_text":"starting March 28","alert_lifecycle":"Upcoming","effect_periods":[{"effect_start":"1427531400","effect_end":"1427697000"}],"affected_services":{"services":[{"route_type":"1","mode_name":"Subway","route_id":"931_","route_name":"Red
+        Line","stop_id":"70061","stop_name":"Alewife"},{"route_type":"1","mode_name":"Subway","route_id":"931_","route_name":"Red
+        Line","stop_id":"70063","stop_name":"Davis - Inbound"},{"route_type":"1","mode_name":"Subway","route_id":"931_","route_name":"Red
+        Line","stop_id":"70064","stop_name":"Davis - Outbound"},{"route_type":"1","mode_name":"Subway","route_id":"931_","route_name":"Red
+        Line","stop_id":"70065","stop_name":"Porter - Inbound"},{"route_type":"1","mode_name":"Subway","route_id":"931_","route_name":"Red
+        Line","stop_id":"70066","stop_name":"Porter - Outbound"},{"route_type":"1","mode_name":"Subway","route_id":"931_","route_name":"Red
+        Line","stop_id":"70067","stop_name":"Harvard - Inbound"},{"route_type":"1","mode_name":"Subway","route_id":"931_","route_name":"Red
+        Line","stop_id":"70068","stop_name":"Harvard - Outbound"},{"route_type":"1","mode_name":"Subway","route_id":"933_","route_name":"Red
+        Line","stop_id":"70061","stop_name":"Alewife"},{"route_type":"1","mode_name":"Subway","route_id":"933_","route_name":"Red
+        Line","stop_id":"70063","stop_name":"Davis - Inbound"},{"route_type":"1","mode_name":"Subway","route_id":"933_","route_name":"Red
+        Line","stop_id":"70064","stop_name":"Davis - Outbound"},{"route_type":"1","mode_name":"Subway","route_id":"933_","route_name":"Red
+        Line","stop_id":"70065","stop_name":"Porter - Inbound"},{"route_type":"1","mode_name":"Subway","route_id":"933_","route_name":"Red
+        Line","stop_id":"70066","stop_name":"Porter - Outbound"},{"route_type":"1","mode_name":"Subway","route_id":"933_","route_name":"Red
+        Line","stop_id":"70067","stop_name":"Harvard - Inbound"},{"route_type":"1","mode_name":"Subway","route_id":"933_","route_name":"Red
+        Line","stop_id":"70068","stop_name":"Harvard - Outbound"}],"elevators":[]}},{"alert_id":67567,"effect_name":"Service
+        Change","effect":"UNKNOWN_EFFECT","cause":"UNKNOWN_CAUSE","header_text":"Service
+        change on Providence/Stoughton Line. Trains 817 (5:00 pm from South Station)
+        821 (6:10 pm from South Station) will stop at Canton Junction.","short_header_text":"Service
+        change on Providence/Stoughton Line. Trains 817 (5pm from South Station) 821
+        (6:10 pm from South Station) will stop at Canton Jct","description_text":"Affected
+        direction: Outbound\r\n\r\nAffected trips:\r\n817 (5:00 pm from South Station)\r\n821
+        (6:10 pm from South Station)","severity":"Minor","created_dt":"1425505563","last_modified_dt":"1425505563","service_effect_text":"Providence/Stoughton
+        Line change","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425506400","effect_end":""}],"affected_services":{"services":[{"route_type":"2","mode_name":"Commuter
+        Rail","route_id":"CR-Providence","route_name":"Providence/Stoughton Line","direction_id":"0","direction_name":"Outbound","trip_id":"CR-Providence-CR-Weekday-Providence-Dec13-817","trip_name":"817
+        (5:00 pm from South Station)"},{"route_type":"2","mode_name":"Commuter Rail","route_id":"CR-Providence","route_name":"Providence/Stoughton
+        Line","direction_id":"0","direction_name":"Outbound","trip_id":"CR-Providence-CR-Weekday-Providence-Dec13-821","trip_name":"821
+        (6:10 pm from South Station)"}],"elevators":[]}},{"alert_id":67853,"effect_name":"Schedule
+        Change","effect":"MODIFIED_SERVICE","cause":"UNKNOWN_CAUSE","header_text":"Fitchburg/South
+        Acton Line Schedule changes, including restored trips, begin Monday, March
+        9. See mbta.com/winter for full schedule information.","short_header_text":"Fitchburg/South
+        Acton Line Schedule changes, including restored trips, begin Mon, Mar 9. See
+        mbta.com/winter for full schedule information","url":"http://bit.ly/1CjJxvV","description_text":"Four
+        trips will be restored to the Fitchburg/South Acton Line schedule beginning
+        March 9: \r\n\r\nDeparting Fitchburg\r\nTrain 400 (5:15 AM to Boston)\r\nTrain
+        404 (6:30 AM to Boston) returns to Express\r\n\r\nDeparting Littleton\r\nTrain
+        452 (8:50 AM to Boston)\r\n\r\nDeparting North Station\r\nTrain 451 (7:32
+        AM to Littleton)\r\nTrain 417 (4:30 PM to Fitchburg)","severity":"Minor","created_dt":"1425611289","last_modified_dt":"1425667616","service_effect_text":"Fitchburg/South
+        Acton Line schedule change","timeframe_text":"starting Monday","alert_lifecycle":"Upcoming","banner_text":"UPDATE:
+        15 Commuter Rail trains reinstated on March 9. For schedules, please visit
+        www.mbta.com/winter/severe_weather/","effect_periods":[{"effect_start":"1425889800","effect_end":""}],"affected_services":{"services":[{"route_type":"2","mode_name":"Commuter
+        Rail","route_id":"CR-Fitchburg","route_name":"Fitchburg/South Acton Line"}],"elevators":[]}},{"alert_id":67854,"effect_name":"Schedule
+        Change","effect":"MODIFIED_SERVICE","cause":"UNKNOWN_CAUSE","header_text":"Fairmount
+        Line Schedule changes, including restored trips, begin Monday, March 9. See
+        mbta.com/winter for full schedule information.","short_header_text":"Fairmount
+        Line Schedule changes, including restored trips, begin Monday, March 9. See
+        mbta.com/winter for full schedule information.","url":"http://www.mbta.com/winter/severe_weather/","description_text":"Two
+        trips will be restored to the Fairmount Line schedule beginning March 9: \r\n\r\nDeparting
+        South Station\r\nTrain 755 (10:20 AM to Readville) \r\nTrain 793 (7:55 AM
+        to Norwood Central via Readville)\r\n\r\nDeparting Readville\r\nTrain 756
+        (11:00 AM to Boston)","severity":"Minor","created_dt":"1425611388","last_modified_dt":"1425611388","service_effect_text":"Fairmount
+        Line schedule change","timeframe_text":"starting Monday","alert_lifecycle":"Upcoming","effect_periods":[{"effect_start":"1425889800","effect_end":""}],"affected_services":{"services":[{"route_type":"2","mode_name":"Commuter
+        Rail","route_id":"CR-Fairmount","route_name":"Fairmount Line"}],"elevators":[]}},{"alert_id":67855,"effect_name":"Schedule
+        Change","effect":"MODIFIED_SERVICE","cause":"UNKNOWN_CAUSE","header_text":"Franklin
+        Line Schedule changes, including restored trips, begin Monday, March 9. See
+        mbta.com/winter for full schedule information.","short_header_text":"Franklin
+        Line Schedule changes, including restored trips, begin Monday, March 9. See
+        mbta.com/winter for full schedule information.","url":"http://www.mbta.com/winter/severe_weather/","description_text":"Three
+        trips will be restored to the Franklin Line schedule beginning March 9:\r\n\r\nDeparting
+        Forge Park\r\nTrain 706 (6:35 AM to Boston)\r\n\r\nDeparting Norwood Central\r\nTrain
+        734 (8:45 AM to Boston)\r\n\r\nDeparting South Station\r\nTrain 793 (7:55
+        AM to Norwood Central)\r\nTrain 719 (5:10 PM to Forge Park/495) Hyde Park
+        stop added\r\nTrain 723 (6:15 PM to Forge Park/495) Hyde Park stop added","severity":"Minor","created_dt":"1425611521","last_modified_dt":"1425677782","service_effect_text":"Franklin
+        Line schedule change","timeframe_text":"starting Monday","alert_lifecycle":"Upcoming","effect_periods":[{"effect_start":"1425889800","effect_end":""}],"affected_services":{"services":[{"route_type":"2","mode_name":"Commuter
+        Rail","route_id":"CR-Franklin","route_name":"Franklin Line"}],"elevators":[]}},{"alert_id":67856,"effect_name":"Schedule
+        Change","effect":"MODIFIED_SERVICE","cause":"UNKNOWN_CAUSE","header_text":"Haverhill
+        Line Schedule changes, including restored trips, begin Monday, March 9. See
+        mbta.com/winter for full schedule information.","short_header_text":"Haverhill
+        Line Schedule changes, including restored trips, begin Monday, March 9. See
+        mbta.com/winter for full schedule information.","url":"http://www.mbta.com/winter/severe_weather/","description_text":"Four
+        trips will be restored to the Haverhill Line schedule beginning March 9: \r\n\r\nDeparting
+        Reading\r\nTrain 264 (8:30 AM to Boston)\r\nTrain 268 (3:00 PM to Boston)\r\n\r\nDeparting
+        North Station\r\nTrain 263 (7:50 AM to Reading)\r\nTrain 267 (2:20 PM to Reading)","severity":"Minor","created_dt":"1425611595","last_modified_dt":"1425611595","service_effect_text":"Haverhill
+        Line schedule change","timeframe_text":"starting Monday","alert_lifecycle":"Upcoming","effect_periods":[{"effect_start":"1425889800","effect_end":""}],"affected_services":{"services":[{"route_type":"2","mode_name":"Commuter
+        Rail","route_id":"CR-Haverhill","route_name":"Haverhill Line"}],"elevators":[]}},{"alert_id":67857,"effect_name":"Schedule
+        Change","effect":"MODIFIED_SERVICE","cause":"UNKNOWN_CAUSE","header_text":"Middleborough/Lakeville
+        Line Schedule changes, including restored trips, begin Monday, March 9. See
+        mbta.com/winter for full schedule information.","short_header_text":"Middleborough/Lakeville
+        Line Schedule changes, including restored trips, begin Mon, Mar 9. See mbta.com/winter
+        for full schedule information","url":"http://www.mbta.com/winter/severe_weather/","description_text":"Two
+        trips will be restored to the Middleborough/Lakeville Line schedule beginning
+        March 9: \r\n\r\nDeparting South Station\r\nTrain 003 (6:35 AM to Middleborough/Lakeville)
+        \r\n\r\nDeparting Middleborough/Lakeville\r\nTrain 010 (8:07 AM to Boston)","severity":"Minor","created_dt":"1425611672","last_modified_dt":"1425611672","service_effect_text":"Middleborough/Lakeville
+        Line schedule change","timeframe_text":"starting Monday","alert_lifecycle":"Upcoming","effect_periods":[{"effect_start":"1425889800","effect_end":""}],"affected_services":{"services":[{"route_type":"2","mode_name":"Commuter
+        Rail","route_id":"CR-Middleborough","route_name":"Middleborough/Lakeville
+        Line"}],"elevators":[]}},{"alert_id":67858,"effect_name":"Schedule Change","effect":"MODIFIED_SERVICE","cause":"UNKNOWN_CAUSE","header_text":"Providence
+        Line Schedule changes, begin Monday, March 9. See mbta.com/winter for full
+        schedule information.","short_header_text":"Providence Line Schedule changes,
+        begin Monday, March 9. See mbta.com/winter for full schedule information.","url":"http://www.mbta.com/winter/severe_weather/","description_text":"Departing
+        South Station:\r\nTrain 817 (5:00 PM to Wickford Junction) Canton Junction
+        stop added \r\nTrain 821 (6:10 PM to Providence) Canton Junction stop added","severity":"Minor","created_dt":"1425611762","last_modified_dt":"1425611788","service_effect_text":"Providence/Stoughton
+        Line schedule change","timeframe_text":"starting Monday","alert_lifecycle":"Upcoming","effect_periods":[{"effect_start":"1425889800","effect_end":""}],"affected_services":{"services":[{"route_type":"2","mode_name":"Commuter
+        Rail","route_id":"CR-Providence","route_name":"Providence/Stoughton Line"}],"elevators":[]}},{"alert_id":68077,"effect_name":"Service
+        Change","effect":"UNKNOWN_EFFECT","cause":"UNKNOWN_CAUSE","header_text":"Ashland
+        Parking: Passengers parking at Ashland may enter space number 7669 in PayByPhone
+        to pay for spaces with illegible numbers.","short_header_text":"Ashland Parking:
+        Passengers parking at Ashland may enter space number 7669 in PayByPhone to
+        pay for spaces with illegible numbers.","description_text":"Due to the recent
+        inclement weather, some parking space numbers have become illegible. To resolve
+        this matter, PayByPhone has created a number that all customers may use to
+        pay for parking at Ashland Station only. This number is 7669. \r\n\r\nIf a
+        space number is illegible, passengers must PayByPhone using the universal
+        space number 7669 in order to ensure payment has been made. Passengers using
+        cash are advised to park in a space with a legible space number. Crews will
+        work to repair space numbers when the weather warms. We apologize for the
+        inconvenience.","severity":"Minor","created_dt":"1425731011","last_modified_dt":"1425731011","service_effect_text":"Framingham/Worcester
+        Line notice","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425731009","effect_end":""}],"affected_services":{"services":[{"route_type":"2","mode_name":"Commuter
+        Rail","route_id":"CR-Worcester","route_name":"Framingham/Worcester Line","stop_id":"Ashland","stop_name":"Ashland"}],"elevators":[]}},{"alert_id":68159,"effect_name":"Snow
+        Route","effect":"DETOUR","cause_name":"snow","cause":"WEATHER","header_text":"Rte
+        64 Detour in Effect: Omitting Hobart St., Faulkland St., & Faneuil St. between
+        Brooks St. & Faulkland St. Connect at Brooks Street.","short_header_text":"Rte
+        64 Detour in Effect: Omitting Hobart St., Faulkland St., & Faneuil St. between
+        Brooks St. & Faulkland St. Connect at Brooks Street.","description_text":"Bypassed
+        stops:\r\nHobart St @ Brooks St (outbound)\r\nHobart St @ Falkland St (outbound)\r\nFaneuil
+        St @ Donnybrook Rd (outbound)\r\nFaneuil St opp Garfield School (outbound)\r\nFaneuil
+        St @ Brooks St (outbound)\r\nFaneuil St @ Fairbanks St (inbound)\r\nFaneuil
+        St @ Oakland St (inbound)\r\nFaneuil St opp Bothwell Rd (inbound)\r\nFaneuil
+        St @ S Hobart St (inbound)\r\nHobart St @ Falkland St (inbound)\r\nHobart
+        St @ Brooks St (inbound)","severity":"Moderate","created_dt":"1425810591","last_modified_dt":"1425836524","service_effect_text":"Route
+        64 on snow route","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425810589","effect_end":"1425866948"}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1094","stop_name":"Faneuil
+        St @ Fairbanks St"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1095","stop_name":"Faneuil
+        St @ Oakland St"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1096","stop_name":"Faneuil
+        St opp Bothwell Rd"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1097","stop_name":"Faneuil
+        St @ S Hobart St"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1098","stop_name":"Hobart
+        St @ Falkland St"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1100","stop_name":"Hobart
+        St @ Brooks St"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1206","stop_name":"Hobart
+        St @ Brooks St"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1208","stop_name":"Hobart
+        St @ Falkland St"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"12081","stop_name":"Faneuil
+        St @ Donnybrook Rd"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1210","stop_name":"Faneuil
+        St opp Garfield School"},{"route_type":"3","mode_name":"Bus","route_id":"64","route_name":"64","stop_id":"1211","stop_name":"Faneuil
+        St @ Brooks St"}],"elevators":[]}},{"alert_id":68183,"effect_name":"Detour","effect":"DETOUR","cause":"UNKNOWN_CAUSE","header_text":"Route
+        47 inbound detoured. Omitting all Pearl Street Stops. Connection: Putnam Ave
+        @ Magazine St.","short_header_text":"Route 47 inbound detoured. Omitting all
+        Pearl Street Stops. Connection: Putnam Ave @ Magazine St.","description_text":"Affected
+        direction: Inbound\n\nAffected stops:\nMassachusetts Ave @ Pearl St\nPearl
+        St @ Franklin St\nPearl St @ Cottage St\nPearl St @ Lawrence St\nPearl St
+        @ Erie St\nPearl St @ Allston St\nGranite St @ Pearl St","severity":"Severe","created_dt":"1425835160","last_modified_dt":"1425835160","service_effect_text":"Route
+        47 detour","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425835150","effect_end":"1425866948"}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"47","route_name":"47","direction_id":"1","direction_name":"Inbound","stop_id":"1764","stop_name":"Pearl
+        St @ Cottage St"},{"route_type":"3","mode_name":"Bus","route_id":"47","route_name":"47","direction_id":"1","direction_name":"Inbound","stop_id":"1765","stop_name":"Pearl
+        St @ Lawrence St"},{"route_type":"3","mode_name":"Bus","route_id":"47","route_name":"47","direction_id":"1","direction_name":"Inbound","stop_id":"1766","stop_name":"Pearl
+        St @ Erie St"},{"route_type":"3","mode_name":"Bus","route_id":"47","route_name":"47","direction_id":"1","direction_name":"Inbound","stop_id":"1767","stop_name":"Pearl
+        St @ Allston St"},{"route_type":"3","mode_name":"Bus","route_id":"47","route_name":"47","direction_id":"1","direction_name":"Inbound","stop_id":"1771","stop_name":"Granite
+        St @ Pearl St"},{"route_type":"3","mode_name":"Bus","route_id":"47","route_name":"47","direction_id":"1","direction_name":"Inbound","stop_id":"1817","stop_name":"Pearl
+        St @ Franklin St"},{"route_type":"3","mode_name":"Bus","route_id":"47","route_name":"47","direction_id":"1","direction_name":"Inbound","stop_id":"72","stop_name":"Massachusetts
+        Ave @ Pearl St"}],"elevators":[]}},{"alert_id":68193,"effect_name":"Delay","effect":"OTHER_EFFECT","cause_name":"traffic","cause":"OTHER_CAUSE","header_text":"Route
+        112 experiencing minor delays due to traffic","short_header_text":"Route 112
+        experiencing minor delays due to traffic","severity":"Minor","created_dt":"1425844861","last_modified_dt":"1425844861","service_effect_text":"Minor
+        Route 112 delay","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425844820","effect_end":"1425866948"}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"112","route_name":"112"}],"elevators":[]}},{"alert_id":68194,"effect_name":"Delay","effect":"OTHER_EFFECT","cause_name":"tie
+        replacement","cause":"MAINTENANCE","header_text":"Route 57 experiencing minor
+        delays due to tie replacement","short_header_text":"Route 57 experiencing
+        minor delays due to tie replacement","severity":"Minor","created_dt":"1425844881","last_modified_dt":"1425844881","service_effect_text":"Minor
+        Route 57 delay","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425844880","effect_end":"1425866948"}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"57","route_name":"57"}],"elevators":[]}},{"alert_id":68195,"effect_name":"Delay","effect":"OTHER_EFFECT","cause_name":"traffic","cause":"OTHER_CAUSE","header_text":"Route
+        108 experiencing minor delays due to traffic","short_header_text":"Route 108
+        experiencing minor delays due to traffic","severity":"Minor","created_dt":"1425845750","last_modified_dt":"1425845750","service_effect_text":"Minor
+        Route 108 delay","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425845749","effect_end":"1425866948"}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"108","route_name":"108"}],"elevators":[]}},{"alert_id":68196,"effect_name":"Delay","effect":"OTHER_EFFECT","cause_name":"disabled
+        bus","cause":"TECHNICAL_PROBLEM","header_text":"Route 39 experiencing minor
+        delays due to disabled bus","short_header_text":"Route 39 experiencing minor
+        delays due to disabled bus","severity":"Minor","created_dt":"1425847263","last_modified_dt":"1425852216","service_effect_text":"Minor
+        Route 39 delay","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425847262","effect_end":"1425866948"}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"39","route_name":"39"}],"elevators":[]}},{"alert_id":68197,"effect_name":"Delay","effect":"OTHER_EFFECT","cause_name":"traffic","cause":"OTHER_CAUSE","header_text":"Route
+        73 experiencing minor delays due to traffic","short_header_text":"Route 73
+        experiencing minor delays due to traffic","severity":"Minor","created_dt":"1425848010","last_modified_dt":"1425848010","service_effect_text":"Minor
+        Route 73 delay","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425848009","effect_end":"1425866948"}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"73","route_name":"73"}],"elevators":[]}},{"alert_id":68199,"effect_name":"Delay","effect":"OTHER_EFFECT","cause_name":"fire","cause":"TECHNICAL_PROBLEM","header_text":"Orange
+        Line experiencing moderate delays due to earlier fire department activity
+        at Green Street","short_header_text":"Orange Line experiencing moderate delays
+        due to earlier fire department activity at Green Street","severity":"Moderate","created_dt":"1425848291","last_modified_dt":"1425851802","service_effect_text":"Moderate
+        Orange Line delay","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425848290","effect_end":"1425866948"}],"affected_services":{"services":[{"route_type":"1","mode_name":"Subway","route_id":"903_","route_name":"Orange
+        Line"},{"route_type":"1","mode_name":"Subway","route_id":"913_","route_name":"Orange
+        Line"}],"elevators":[]}},{"alert_id":68201,"effect_name":"Delay","effect":"OTHER_EFFECT","cause_name":"traffic","cause":"OTHER_CAUSE","header_text":"Route
+        104 experiencing minor delays due to traffic","short_header_text":"Route 104
+        experiencing minor delays due to traffic","severity":"Minor","created_dt":"1425852228","last_modified_dt":"1425852228","service_effect_text":"Minor
+        Route 104 delay","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425852227","effect_end":"1425866948"}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"104","route_name":"104"}],"elevators":[]}},{"alert_id":68202,"effect_name":"Delay","effect":"OTHER_EFFECT","cause_name":"traffic","cause":"OTHER_CAUSE","header_text":"Route
+        43 experiencing minor delays due to traffic","short_header_text":"Route 43
+        experiencing minor delays due to traffic","severity":"Minor","created_dt":"1425852240","last_modified_dt":"1425852240","service_effect_text":"Minor
+        Route 43 delay","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425852239","effect_end":"1425866948"}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"43","route_name":"43"}],"elevators":[]}},{"alert_id":68203,"effect_name":"Delay","effect":"OTHER_EFFECT","cause_name":"traffic","cause":"OTHER_CAUSE","header_text":"Silver
+        Line - SL1 experiencing minor delays due to traffic","short_header_text":"Silver
+        Line - SL1 experiencing minor delays due to traffic","severity":"Minor","created_dt":"1425852541","last_modified_dt":"1425852541","service_effect_text":"Minor
+        Silver Line - SL1 delay","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425852540","effect_end":"1425866948"}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"741","route_name":"SL1"},{"route_type":"3","mode_name":"Bus","route_id":"746","route_name":"Silver
+        Line Waterfront","route_hide":"true"}],"elevators":[]}}]}'
+    http_version: 
+  recorded_at: Sun, 08 Mar 2015 22:19:32 GMT
+recorded_with: VCR 2.9.3

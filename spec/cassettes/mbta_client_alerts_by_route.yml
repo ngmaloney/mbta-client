@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://realtime.mbta.com/developer/api/v2/alertsbyroute?api_key=<API_KEY>&format=json&route=73
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 08 Mar 2015 22:25:20 GMT
+      Content-Length:
+      - '1702'
+    body:
+      encoding: UTF-8
+      string: '{"alerts":[{"alert_id":26578,"effect_name":"Stop Move","effect":"STOP_MOVED","cause_name":"construction","cause":"CONSTRUCTION","header_text":"The
+        Church St @ Lexington St (layover) bus stop is temporarily closed due to construction.","short_header_text":"The
+        Church St @ Lexington St (layover) bus stop is temporarily closed due to construction.","description_text":"Beginning
+        Monday, April 14, 2014, the Church Street @ Lexington Street stop is temporarily
+        closed due to construction. Customers should please travel west, turn right
+        at Lexington Street, and travel north to the nearest accessible location on
+        Lexington Street @ Church Street.","severity":"Severe","created_dt":"1397178137","last_modified_dt":"1410488784","service_effect_text":"Church
+        St @ Lexington St moved","timeframe_text":"ongoing","alert_lifecycle":"Ongoing","effect_periods":[{"effect_start":"1397464200","effect_end":""}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"73","route_name":"73","stop_id":"2134","stop_name":"Church
+        St @ Lexington St"}],"elevators":[]}},{"alert_id":68197,"effect_name":"Delay","effect":"OTHER_EFFECT","cause_name":"traffic","cause":"OTHER_CAUSE","header_text":"Route
+        73 experiencing minor delays due to traffic","short_header_text":"Route 73
+        experiencing minor delays due to traffic","severity":"Minor","created_dt":"1425848010","last_modified_dt":"1425848010","service_effect_text":"Minor
+        Route 73 delay","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425848009","effect_end":"1425866948"}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"73","route_name":"73"}],"elevators":[]}}],"route_id":"73","route_name":"73"}'
+    http_version: 
+  recorded_at: Sun, 08 Mar 2015 22:25:19 GMT
+- request:
+    method: get
+    uri: http://realtime.mbta.com/developer/api/v2/alertsbyroute?api_key=<API_KEY>&format=json&route=73
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 08 Mar 2015 22:26:06 GMT
+      Content-Length:
+      - '1702'
+    body:
+      encoding: UTF-8
+      string: '{"alerts":[{"alert_id":26578,"effect_name":"Stop Move","effect":"STOP_MOVED","cause_name":"construction","cause":"CONSTRUCTION","header_text":"The
+        Church St @ Lexington St (layover) bus stop is temporarily closed due to construction.","short_header_text":"The
+        Church St @ Lexington St (layover) bus stop is temporarily closed due to construction.","description_text":"Beginning
+        Monday, April 14, 2014, the Church Street @ Lexington Street stop is temporarily
+        closed due to construction. Customers should please travel west, turn right
+        at Lexington Street, and travel north to the nearest accessible location on
+        Lexington Street @ Church Street.","severity":"Severe","created_dt":"1397178137","last_modified_dt":"1410488784","service_effect_text":"Church
+        St @ Lexington St moved","timeframe_text":"ongoing","alert_lifecycle":"Ongoing","effect_periods":[{"effect_start":"1397464200","effect_end":""}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"73","route_name":"73","stop_id":"2134","stop_name":"Church
+        St @ Lexington St"}],"elevators":[]}},{"alert_id":68197,"effect_name":"Delay","effect":"OTHER_EFFECT","cause_name":"traffic","cause":"OTHER_CAUSE","header_text":"Route
+        73 experiencing minor delays due to traffic","short_header_text":"Route 73
+        experiencing minor delays due to traffic","severity":"Minor","created_dt":"1425848010","last_modified_dt":"1425848010","service_effect_text":"Minor
+        Route 73 delay","alert_lifecycle":"New","effect_periods":[{"effect_start":"1425848009","effect_end":"1425866948"}],"affected_services":{"services":[{"route_type":"3","mode_name":"Bus","route_id":"73","route_name":"73"}],"elevators":[]}}],"route_id":"73","route_name":"73"}'
+    http_version: 
+  recorded_at: Sun, 08 Mar 2015 22:26:06 GMT
+recorded_with: VCR 2.9.3

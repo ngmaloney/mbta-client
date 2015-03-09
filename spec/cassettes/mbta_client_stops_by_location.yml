@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://realtime.mbta.com/developer/api/v2/stopsbylocation?api_key=<API_KEY>&format=json&lat=42.2816&lon=-71.159932
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Wed, 04 Mar 2015 04:02:11 GMT
+      Content-Length:
+      - '2681'
+    body:
+      encoding: UTF-8
+      string: '{"stop":[{"stop_id":"West Roxbury","stop_name":"West Roxbury","parent_station":"","parent_station_name":"","stop_lat":"42.2816","stop_lon":"-71.159932","distance":"0"},{"stop_id":"845","stop_name":"Lagrange
+        St opp Dent St","parent_station":"","parent_station_name":"","stop_lat":"42.281487","stop_lon":"-71.159676","distance":"0.0154300853610039"},{"stop_id":"843","stop_name":"Lagrange
+        St @ Dent St","parent_station":"","parent_station_name":"","stop_lat":"42.281376","stop_lon":"-71.159683","distance":"0.020174453034997"},{"stop_id":"842","stop_name":"Lagrange
+        St @ Westmount Ave","parent_station":"","parent_station_name":"","stop_lat":"42.282455","stop_lon":"-71.16082","distance":"0.0743383318185806"},{"stop_id":"846","stop_name":"Lagrange
+        St @ Westmount Ave","parent_station":"","parent_station_name":"","stop_lat":"42.282551","stop_lon":"-71.160736","distance":"0.0773136392235756"},{"stop_id":"844","stop_name":"LaGrange
+        St @ Centre St","parent_station":"","parent_station_name":"","stop_lat":"42.280773","stop_lon":"-71.158257","distance":"0.103059433400631"},{"stop_id":"781","stop_name":"Centre
+        St @ Lagrange St","parent_station":"","parent_station_name":"","stop_lat":"42.280827","stop_lon":"-71.158096","distance":"0.10809301584959"},{"stop_id":"810","stop_name":"Opp
+        2000 Centre St","parent_station":"","parent_station_name":"","stop_lat":"42.282032","stop_lon":"-71.157829","distance":"0.111622743308544"},{"stop_id":"782","stop_name":"Centre
+        St Opp Mt Vernon St","parent_station":"","parent_station_name":"","stop_lat":"42.282883","stop_lon":"-71.157204","distance":"0.165245294570923"},{"stop_id":"841","stop_name":"Lagrange
+        St @ Virgil Rd","parent_station":"","parent_station_name":"","stop_lat":"42.28376","stop_lon":"-71.161613","distance":"0.171998232603073"},{"stop_id":"847","stop_name":"Lagrange
+        St opp Virgil St","parent_station":"","parent_station_name":"","stop_lat":"42.283852","stop_lon":"-71.161537","distance":"0.175656765699387"},{"stop_id":"821","stop_name":"Centre
+        St @ Lorette St","parent_station":"","parent_station_name":"","stop_lat":"42.278988","stop_lon":"-71.159386","distance":"0.182614430785179"},{"stop_id":"780","stop_name":"Centre
+        St @ Saint Theresa Ave","parent_station":"","parent_station_name":"","stop_lat":"42.278725","stop_lon":"-71.159424","distance":"0.200330764055252"},{"stop_id":"811","stop_name":"Centre
+        St @ Spring St","parent_station":"","parent_station_name":"","stop_lat":"42.278584","stop_lon":"-71.159653","distance":"0.208866328001022"},{"stop_id":"812","stop_name":"Spring
+        St @ Temple St","parent_station":"","parent_station_name":"","stop_lat":"42.27821","stop_lon":"-71.160301","distance":"0.234929502010345"}]}'
+    http_version: 
+  recorded_at: Wed, 04 Mar 2015 04:02:12 GMT
+recorded_with: VCR 2.9.3

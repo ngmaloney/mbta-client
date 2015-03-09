@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://realtime.mbta.com/developer/api/v2/stopsbyroute?api_key=<API_KEY>&format=json&route=CR-Needham
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/7.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Wed, 04 Mar 2015 03:52:05 GMT
+      Content-Length:
+      - '4174'
+    body:
+      encoding: UTF-8
+      string: '{"direction":[{"direction_id":"0","direction_name":"Outbound","stop":[{"stop_order":"1","stop_id":"South
+        Station","stop_name":"South Station","parent_station":"place-sstat","parent_station_name":"South
+        Station","stop_lat":"42.352614","stop_lon":"-71.055364"},{"stop_order":"2","stop_id":"Back
+        Bay","stop_name":"Back Bay","parent_station":"place-bbsta","parent_station_name":"Back
+        Bay","stop_lat":"42.347158","stop_lon":"-71.075769"},{"stop_order":"3","stop_id":"Ruggles","stop_name":"Ruggles","parent_station":"place-rugg","parent_station_name":"Ruggles","stop_lat":"42.336377","stop_lon":"-71.088961"},{"stop_order":"4","stop_id":"Forest
+        Hills","stop_name":"Forest Hills","parent_station":"place-forhl","parent_station_name":"Forest
+        Hills","stop_lat":"42.300023","stop_lon":"-71.113377"},{"stop_order":"5","stop_id":"Roslindale
+        Village","stop_name":"Roslindale Village","parent_station":"","parent_station_name":"","stop_lat":"42.287206","stop_lon":"-71.12961"},{"stop_order":"6","stop_id":"Bellevue","stop_name":"Bellevue","parent_station":"","parent_station_name":"","stop_lat":"42.287138","stop_lon":"-71.14606"},{"stop_order":"7","stop_id":"Highland","stop_name":"Highland","parent_station":"","parent_station_name":"","stop_lat":"42.284869","stop_lon":"-71.1547"},{"stop_order":"8","stop_id":"West
+        Roxbury","stop_name":"West Roxbury","parent_station":"","parent_station_name":"","stop_lat":"42.2816","stop_lon":"-71.159932"},{"stop_order":"9","stop_id":"Hersey","stop_name":"Hersey","parent_station":"","parent_station_name":"","stop_lat":"42.275842","stop_lon":"-71.214853"},{"stop_order":"10","stop_id":"Needham
+        Junction","stop_name":"Needham Junction","parent_station":"","parent_station_name":"","stop_lat":"42.273187","stop_lon":"-71.235559"},{"stop_order":"11","stop_id":"Needham
+        Center","stop_name":"Needham Center","parent_station":"","parent_station_name":"","stop_lat":"42.281331","stop_lon":"-71.237541"},{"stop_order":"12","stop_id":"Needham
+        Heights","stop_name":"Needham Heights","parent_station":"","parent_station_name":"","stop_lat":"42.293663","stop_lon":"-71.236012"}]},{"direction_id":"1","direction_name":"Inbound","stop":[{"stop_order":"1","stop_id":"Needham
+        Heights","stop_name":"Needham Heights","parent_station":"","parent_station_name":"","stop_lat":"42.293663","stop_lon":"-71.236012"},{"stop_order":"2","stop_id":"Needham
+        Center","stop_name":"Needham Center","parent_station":"","parent_station_name":"","stop_lat":"42.281331","stop_lon":"-71.237541"},{"stop_order":"3","stop_id":"Needham
+        Junction","stop_name":"Needham Junction","parent_station":"","parent_station_name":"","stop_lat":"42.273187","stop_lon":"-71.235559"},{"stop_order":"4","stop_id":"Hersey","stop_name":"Hersey","parent_station":"","parent_station_name":"","stop_lat":"42.275842","stop_lon":"-71.214853"},{"stop_order":"5","stop_id":"West
+        Roxbury","stop_name":"West Roxbury","parent_station":"","parent_station_name":"","stop_lat":"42.2816","stop_lon":"-71.159932"},{"stop_order":"6","stop_id":"Highland","stop_name":"Highland","parent_station":"","parent_station_name":"","stop_lat":"42.284869","stop_lon":"-71.1547"},{"stop_order":"7","stop_id":"Bellevue","stop_name":"Bellevue","parent_station":"","parent_station_name":"","stop_lat":"42.287138","stop_lon":"-71.14606"},{"stop_order":"8","stop_id":"Roslindale
+        Village","stop_name":"Roslindale Village","parent_station":"","parent_station_name":"","stop_lat":"42.287206","stop_lon":"-71.12961"},{"stop_order":"9","stop_id":"Forest
+        Hills","stop_name":"Forest Hills","parent_station":"place-forhl","parent_station_name":"Forest
+        Hills","stop_lat":"42.300023","stop_lon":"-71.113377"},{"stop_order":"10","stop_id":"Ruggles","stop_name":"Ruggles","parent_station":"place-rugg","parent_station_name":"Ruggles","stop_lat":"42.336377","stop_lon":"-71.088961"},{"stop_order":"11","stop_id":"Back
+        Bay","stop_name":"Back Bay","parent_station":"place-bbsta","parent_station_name":"Back
+        Bay","stop_lat":"42.347158","stop_lon":"-71.075769"},{"stop_order":"12","stop_id":"South
+        Station","stop_name":"South Station","parent_station":"place-sstat","parent_station_name":"South
+        Station","stop_lat":"42.352614","stop_lon":"-71.055364"}]}]}'
+    http_version: 
+  recorded_at: Wed, 04 Mar 2015 03:52:05 GMT
+recorded_with: VCR 2.9.3
